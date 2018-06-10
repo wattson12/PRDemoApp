@@ -46,6 +46,7 @@ struct StubProvider: DataProvider {
     }
 }
 
+
 struct StubDataProvider: DataProvider {
 
     let data: Data

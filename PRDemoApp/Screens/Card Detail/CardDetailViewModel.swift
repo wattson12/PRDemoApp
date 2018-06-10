@@ -14,6 +14,8 @@ final class CardDetailViewModel {
 
     let disposeBag = DisposeBag()
 
+    let badVariable:String = "test"
+
     let cardDetails = PublishSubject<CardDetail>()
     private let card: Card
 
@@ -31,5 +33,10 @@ final class CardDetailViewModel {
             .observeOn(MainScheduler.instance)
             .bind(to: cardDetails)
             .disposed(by: disposeBag)
+    }
+
+    func badFunction()
+    {
+        print(#function)
     }
 }
