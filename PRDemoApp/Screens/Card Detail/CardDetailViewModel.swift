@@ -23,6 +23,7 @@ final class CardDetailViewModel {
 
     init(card: Card) {
         self.card = card
+        
     }
 
     func fetchCardDetails() {
