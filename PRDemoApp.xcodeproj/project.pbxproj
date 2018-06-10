@@ -18,6 +18,8 @@
 		2243565A20CD2CE8006472A3 /* CardListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243565920CD2CE8006472A3 /* CardListTableViewController.swift */; };
 		2243565D20CD2DB3006472A3 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243565C20CD2DB2006472A3 /* Card.swift */; };
 		2243566020CD2E0E006472A3 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243565F20CD2E0E006472A3 /* DataProvider.swift */; };
+		2243566220CD2E68006472A3 /* URL+Creation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243566120CD2E68006472A3 /* URL+Creation.swift */; };
+		2243566420CD2EA5006472A3 /* Observable+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243566320CD2EA5006472A3 /* Observable+Conversion.swift */; };
 		9D6489E0500A2715BC6E1538 /* Pods_PRDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62601C344125337719033944 /* Pods_PRDemoAppTests.framework */; };
 		F4DB4B4BDC1D18E0EC7026D9 /* Pods_PRDemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF6A3AE2B9EDC279A2546EF /* Pods_PRDemoAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		2243565920CD2CE8006472A3 /* CardListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListTableViewController.swift; sourceTree = "<group>"; };
 		2243565C20CD2DB2006472A3 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2243565F20CD2E0E006472A3 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		2243566120CD2E68006472A3 /* URL+Creation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Creation.swift"; sourceTree = "<group>"; };
+		2243566320CD2EA5006472A3 /* Observable+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Conversion.swift"; sourceTree = "<group>"; };
 		2712C9C0E409CBFEF48B2B6F /* Pods-PRDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRDemoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRDemoAppTests/Pods-PRDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		36DD919A1F0B8BBA0B2BA634 /* Pods-PRDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRDemoApp/Pods-PRDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		62601C344125337719033944 /* Pods_PRDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				2243565F20CD2E0E006472A3 /* DataProvider.swift */,
+				2243566120CD2E68006472A3 /* URL+Creation.swift */,
+				2243566320CD2EA5006472A3 /* Observable+Conversion.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -452,8 +458,10 @@
 				2243565320CD227D006472A3 /* AppCoordinator.swift in Sources */,
 				2243562320CD208A006472A3 /* AppDelegate.swift in Sources */,
 				2243565D20CD2DB3006472A3 /* Card.swift in Sources */,
+				2243566420CD2EA5006472A3 /* Observable+Conversion.swift in Sources */,
 				2243565620CD2C9B006472A3 /* BaseViewController.swift in Sources */,
 				2243565A20CD2CE8006472A3 /* CardListTableViewController.swift in Sources */,
+				2243566220CD2E68006472A3 /* URL+Creation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
