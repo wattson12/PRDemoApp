@@ -16,7 +16,7 @@ final class CardListViewModel {
 
     let cards: BehaviorRelay<[Card]>
 
-    let dataProvider: DataProvider = URLSession.shared
+    let dataProvider: DataProvider = Current.dataProvider
 
     init(cards: [Card] = []) {
         self.cards = BehaviorRelay(value: cards)
