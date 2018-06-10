@@ -17,9 +17,11 @@ class CardListTableViewController: BaseViewController {
         return tableView
     }()
 
+    weak var coordinatorDelegate: AppCoordinatorDelegate?
     let viewModel = CardListViewModel()
 
-    override init() {
+    init(coordinatorDelegate: AppCoordinatorDelegate) {
+        self.coordinatorDelegate = coordinatorDelegate
         super.init()
 
         self.title = "Card List"
@@ -43,6 +45,13 @@ class CardListTableViewController: BaseViewController {
                 cell.textLabel?.text = card.name
                 cell.accessoryType = .disclosureIndicator
             }
+            .disposed(by: disposeBag)
+
+        tableView.rx
+            .modelSelected(Card.self)
+            .subscribe(onNext: { [unowned self] selectedCard in
+                self.coordinatorDelegate?.cardSelected(selectedCard, fromViewController: self)
+            })
             .disposed(by: disposeBag)
     }
 

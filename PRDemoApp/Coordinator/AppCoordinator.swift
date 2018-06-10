@@ -21,11 +21,20 @@ final class AppCoordinator {
             Current.dataProvider = mockDataProvider
         }
 
-        let cardListViewController = CardListTableViewController()
+        let cardListViewController = CardListTableViewController(coordinatorDelegate: self)
         let rootNavigationController = UINavigationController(rootViewController: cardListViewController)
 
         window.rootViewController = rootNavigationController
 
         window.makeKeyAndVisible()
+    }
+}
+
+extension AppCoordinator: AppCoordinatorDelegate {
+
+    func cardSelected(_ card: Card, fromViewController viewController: UIViewController) {
+
+        let cardDetailViewController = CardDetailViewController(card: card)
+        viewController.navigationController?.pushViewController(cardDetailViewController, animated: true)
     }
 }
