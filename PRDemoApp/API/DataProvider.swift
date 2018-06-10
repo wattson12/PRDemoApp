@@ -10,7 +10,6 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-//this is an abstraction around URLSession which will help testing view models
 protocol DataProvider {
     func fetchResponse(fromURL url: URL) -> Observable<Data>
 }
