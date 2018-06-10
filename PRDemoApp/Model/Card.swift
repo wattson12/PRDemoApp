@@ -9,6 +9,11 @@
 import Foundation
 
 struct Card: Codable {
+    private enum CodingKeys: CodingKey, String {
+        case identifier = "id"
+        case name
+    }
+
     let identifier: Int
     let name: String
 }
