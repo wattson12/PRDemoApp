@@ -17,3 +17,15 @@ struct Card: Codable {
     let identifier: Int
     let name: String
 }
+
+struct CardDetail: Codable {
+    private enum CodingKeys: CodingKey, String {
+        case identifier = "id"
+        case name
+        case balance
+    }
+
+    let identifier: Int
+    let name: String
+    let balance: String
+}
