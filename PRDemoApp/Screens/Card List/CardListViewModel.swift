@@ -12,7 +12,7 @@ import RxCocoa
 
 final class CardListViewModel {
 
-    let disposeBag = DisposeBag()
+    private(set) var disposeBag = DisposeBag()
 
     let cards: BehaviorRelay<[Card]>
 
@@ -31,5 +31,9 @@ final class CardListViewModel {
             .observeOn(MainScheduler.instance)
             .bind(to: cards)
             .disposed(by: disposeBag)
+    }
+
+    func cancel() {
+        disposeBag = DisposeBag()
     }
 }

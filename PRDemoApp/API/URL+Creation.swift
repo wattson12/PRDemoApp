@@ -19,4 +19,14 @@ extension URL {
         guard let url = URL(string: "https://api.jsonbin.io/b/5b1d04517a973f4ce5785995") else { fatalError("Unable to create URL for card detail") }
         return url
     }
+
+    static func newURL() -> URL {
+        guard let url = URL(string: "https://api.jsonbin.io/b/5b1d04517a973f4ce5785995") else { fatalError("Unable to create URL for card detail") }
+        return url
+    }
+
+    static func someOtherURL() -> URL {
+        guard let url = URL(string: "https://api.jsonbin.io/b/5b1d04517a973f4ce5785995") else { fatalError("Unable to create URL for card detail") }
+        return url
+    }
 }

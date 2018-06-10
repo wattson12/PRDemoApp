@@ -12,7 +12,7 @@ import RxCocoa
 
 final class CardDetailViewModel {
 
-    let disposeBag = DisposeBag()
+    private(set) var disposeBag = DisposeBag()
 
     let cardDetails = PublishSubject<CardDetail>()
     private let card: Card
@@ -31,5 +31,9 @@ final class CardDetailViewModel {
             .observeOn(MainScheduler.instance)
             .bind(to: cardDetails)
             .disposed(by: disposeBag)
+    }
+
+    func cancel() {
+        disposeBag = DisposeBag()
     }
 }
