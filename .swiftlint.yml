@@ -1,0 +1,4 @@
+excluded: # ignoring external code and tests
+  - Pods
+  - PRDemoAppTests
+  - PRDemoAppUITests
