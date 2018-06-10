@@ -17,6 +17,10 @@ final class AppCoordinator {
     }
 
     func start() {
+        if ProcessInfo.processInfo.shouldStubDataProvider {
+            Current.dataProvider = mockDataProvider
+        }
+
         let cardListViewController = CardListTableViewController()
         let rootNavigationController = UINavigationController(rootViewController: cardListViewController)
 
