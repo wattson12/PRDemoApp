@@ -13,7 +13,7 @@ class URL_CreationTests: XCTestCase {
     
     func testCreatingCardListURL() {
         let url = URL.cardList
-        XCTAssertEqual(url.absoluteString, "https://api.jsonbin.io/b/5b1cf783c2e3344ccd96d39d")
+        XCTAssertEqual(url.absoluteString, "https://api.jsonbin.io/b/5b")
     }
     
 }
