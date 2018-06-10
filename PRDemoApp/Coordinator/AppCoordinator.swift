@@ -17,7 +17,7 @@ final class AppCoordinator {
     }
 
     func start() {
-        let cardListViewController = UIViewController()
+        let cardListViewController = CardListTableViewController()
         let rootNavigationController = UINavigationController(rootViewController: cardListViewController)
 
         window.rootViewController = rootNavigationController

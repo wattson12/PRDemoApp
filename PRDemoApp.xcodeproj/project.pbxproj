@@ -14,6 +14,8 @@
 		2243563820CD208C006472A3 /* PRDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243563720CD208C006472A3 /* PRDemoAppTests.swift */; };
 		2243564320CD208C006472A3 /* PRDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243564220CD208C006472A3 /* PRDemoAppUITests.swift */; };
 		2243565320CD227D006472A3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243565220CD227D006472A3 /* AppCoordinator.swift */; };
+		2243565620CD2C9B006472A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243565520CD2C9B006472A3 /* BaseViewController.swift */; };
+		2243565A20CD2CE8006472A3 /* CardListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243565920CD2CE8006472A3 /* CardListTableViewController.swift */; };
 		9D6489E0500A2715BC6E1538 /* Pods_PRDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62601C344125337719033944 /* Pods_PRDemoAppTests.framework */; };
 		F4DB4B4BDC1D18E0EC7026D9 /* Pods_PRDemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF6A3AE2B9EDC279A2546EF /* Pods_PRDemoAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		2243564220CD208C006472A3 /* PRDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDemoAppUITests.swift; sourceTree = "<group>"; };
 		2243564420CD208C006472A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2243565220CD227D006472A3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2243565520CD2C9B006472A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2243565920CD2CE8006472A3 /* CardListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListTableViewController.swift; sourceTree = "<group>"; };
 		2712C9C0E409CBFEF48B2B6F /* Pods-PRDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRDemoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRDemoAppTests/Pods-PRDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		36DD919A1F0B8BBA0B2BA634 /* Pods-PRDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRDemoApp/Pods-PRDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		62601C344125337719033944 /* Pods_PRDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,8 @@
 		2243562120CD208A006472A3 /* PRDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				2243565720CD2CC4006472A3 /* Screens */,
+				2243565420CD2C87006472A3 /* Base Classes */,
 				2243565120CD2262006472A3 /* Coordinator */,
 				2243562220CD208A006472A3 /* AppDelegate.swift */,
 				2243562920CD208C006472A3 /* Assets.xcassets */,
@@ -145,6 +151,30 @@
 				2243565220CD227D006472A3 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2243565420CD2C87006472A3 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2243565520CD2C9B006472A3 /* BaseViewController.swift */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		2243565720CD2CC4006472A3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2243565820CD2CCB006472A3 /* Card List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2243565820CD2CCB006472A3 /* Card List */ = {
+			isa = PBXGroup;
+			children = (
+				2243565920CD2CE8006472A3 /* CardListTableViewController.swift */,
+			);
+			path = "Card List";
 			sourceTree = "<group>";
 		};
 		4A3300B95FF2A00223F552CC /* Pods */ = {
@@ -398,6 +428,8 @@
 			files = (
 				2243565320CD227D006472A3 /* AppCoordinator.swift in Sources */,
 				2243562320CD208A006472A3 /* AppDelegate.swift in Sources */,
+				2243565620CD2C9B006472A3 /* BaseViewController.swift in Sources */,
+				2243565A20CD2CE8006472A3 /* CardListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
