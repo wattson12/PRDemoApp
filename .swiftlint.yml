@@ -5,5 +5,3 @@ excluded: # ignoring external code and tests
   - Dangerfile.swift
 
 line_length: 150
-
-reporter: json
