@@ -12,6 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var appCoordinator: AppCoordinator?
+    
+    private var badVariable:String = "sdfdsf";
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -21,4 +23,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    
 }
