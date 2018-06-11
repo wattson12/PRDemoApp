@@ -4,6 +4,8 @@
 
 << Link to the Jira ticket >>
 
+<< Design screenshots / zeplin link for UI changes >>
+
 << A description of what changes were made, and any issues which the reviewer should be aware of >>
 
 ### Checklist for developer
