@@ -31,6 +31,11 @@
 		2243567F20CD3446006472A3 /* DataProvider+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243567E20CD3446006472A3 /* DataProvider+Stubs.swift */; };
 		2243568220CD3594006472A3 /* ProcessInfo+Stubbing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243568120CD3594006472A3 /* ProcessInfo+Stubbing.swift */; };
 		2243568420CD3627006472A3 /* DataProvider+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243568320CD3627006472A3 /* DataProvider+Mock.swift */; };
+		2243568820CD3A18006472A3 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243568720CD3A18006472A3 /* CardDetailViewController.swift */; };
+		2243568A20CD3A43006472A3 /* AppCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243568920CD3A43006472A3 /* AppCoordinatorDelegate.swift */; };
+		2243568C20CD3B48006472A3 /* CardDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243568B20CD3B48006472A3 /* CardDetailViewModel.swift */; };
+		2243568F20CD3DB6006472A3 /* CardDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243568E20CD3DB6006472A3 /* CardDetailViewModelTests.swift */; };
+		2243569120CD3E2C006472A3 /* card_details.json in Resources */ = {isa = PBXBuildFile; fileRef = 2243569020CD3E2C006472A3 /* card_details.json */; };
 		9D6489E0500A2715BC6E1538 /* Pods_PRDemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62601C344125337719033944 /* Pods_PRDemoAppTests.framework */; };
 		F4DB4B4BDC1D18E0EC7026D9 /* Pods_PRDemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF6A3AE2B9EDC279A2546EF /* Pods_PRDemoAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +87,11 @@
 		2243567E20CD3446006472A3 /* DataProvider+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataProvider+Stubs.swift"; sourceTree = "<group>"; };
 		2243568120CD3594006472A3 /* ProcessInfo+Stubbing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProcessInfo+Stubbing.swift"; sourceTree = "<group>"; };
 		2243568320CD3627006472A3 /* DataProvider+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataProvider+Mock.swift"; sourceTree = "<group>"; };
+		2243568720CD3A18006472A3 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		2243568920CD3A43006472A3 /* AppCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		2243568B20CD3B48006472A3 /* CardDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewModel.swift; sourceTree = "<group>"; };
+		2243568E20CD3DB6006472A3 /* CardDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewModelTests.swift; sourceTree = "<group>"; };
+		2243569020CD3E2C006472A3 /* card_details.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = card_details.json; sourceTree = "<group>"; };
 		2712C9C0E409CBFEF48B2B6F /* Pods-PRDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRDemoAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRDemoAppTests/Pods-PRDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		36DD919A1F0B8BBA0B2BA634 /* Pods-PRDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PRDemoApp/Pods-PRDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		62601C344125337719033944 /* Pods_PRDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				2243565220CD227D006472A3 /* AppCoordinator.swift */,
+				2243568920CD3A43006472A3 /* AppCoordinatorDelegate.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 		2243565720CD2CC4006472A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2243568620CD3A05006472A3 /* Card Detail */,
 				2243565820CD2CCB006472A3 /* Card List */,
 			);
 			path = Screens;
@@ -252,6 +264,7 @@
 		2243566B20CD31E2006472A3 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2243568D20CD3DA7006472A3 /* Card Detail */,
 				2243566C20CD31E9006472A3 /* Card List */,
 			);
 			path = Screens;
@@ -289,6 +302,7 @@
 			children = (
 				2243567420CD3243006472A3 /* card.json */,
 				2243567C20CD33D1006472A3 /* card_list.json */,
+				2243569020CD3E2C006472A3 /* card_details.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -300,6 +314,23 @@
 				2243568320CD3627006472A3 /* DataProvider+Mock.swift */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		2243568620CD3A05006472A3 /* Card Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2243568720CD3A18006472A3 /* CardDetailViewController.swift */,
+				2243568B20CD3B48006472A3 /* CardDetailViewModel.swift */,
+			);
+			path = "Card Detail";
+			sourceTree = "<group>";
+		};
+		2243568D20CD3DA7006472A3 /* Card Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2243568E20CD3DB6006472A3 /* CardDetailViewModelTests.swift */,
+			);
+			path = "Card Detail";
 			sourceTree = "<group>";
 		};
 		4A3300B95FF2A00223F552CC /* Pods */ = {
@@ -443,6 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2243569120CD3E2C006472A3 /* card_details.json in Resources */,
 				2243567520CD3243006472A3 /* card.json in Resources */,
 				2243567D20CD33D1006472A3 /* card_list.json in Resources */,
 			);
@@ -553,12 +585,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2243568820CD3A18006472A3 /* CardDetailViewController.swift in Sources */,
 				2243568420CD3627006472A3 /* DataProvider+Mock.swift in Sources */,
 				2243566020CD2E0E006472A3 /* DataProvider.swift in Sources */,
 				2243566620CD2F21006472A3 /* CardListViewModel.swift in Sources */,
 				2243565320CD227D006472A3 /* AppCoordinator.swift in Sources */,
+				2243568A20CD3A43006472A3 /* AppCoordinatorDelegate.swift in Sources */,
 				2243562320CD208A006472A3 /* AppDelegate.swift in Sources */,
 				2243565D20CD2DB3006472A3 /* Card.swift in Sources */,
+				2243568C20CD3B48006472A3 /* CardDetailViewModel.swift in Sources */,
 				2243566420CD2EA5006472A3 /* Observable+Conversion.swift in Sources */,
 				2243565620CD2C9B006472A3 /* BaseViewController.swift in Sources */,
 				2243565A20CD2CE8006472A3 /* CardListTableViewController.swift in Sources */,
@@ -575,6 +610,7 @@
 				2243567720CD32C4006472A3 /* Observable+ConversionTests.swift in Sources */,
 				2243567920CD3319006472A3 /* URL+CreationTests.swift in Sources */,
 				2243567F20CD3446006472A3 /* DataProvider+Stubs.swift in Sources */,
+				2243568F20CD3DB6006472A3 /* CardDetailViewModelTests.swift in Sources */,
 				2243566F20CD3205006472A3 /* CardTests.swift in Sources */,
 				2243567B20CD3362006472A3 /* CardListViewModelTests.swift in Sources */,
 				2243567220CD3223006472A3 /* TestHelpers.swift in Sources */,

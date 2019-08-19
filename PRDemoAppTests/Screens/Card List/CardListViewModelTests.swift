@@ -32,7 +32,7 @@ class CardListViewModelTests: XCTestCase {
         XCTAssertEqual(viewModel.cards.value.map { $0.identifier }, cards.map { $0.identifier })
     }
 
-    func testViewModelBindsDataProviderResponseToProcedures() {
+    func testViewModelBindsDataProviderResponseToCards() {
 
         Current.dataProvider = StubDataProvider(data: testData(fromFixtureNamed: "card_list"))
         let viewModel = CardListViewModel()
