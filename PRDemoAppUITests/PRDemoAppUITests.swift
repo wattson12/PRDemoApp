@@ -40,5 +40,12 @@ class PRDemoAppUITests: XCTestCase {
         XCTAssertTrue(app.tables.cells.staticTexts["another card"].exists)
         XCTAssertTrue(app.tables.cells.staticTexts["last card"].exists)
     }
+
+    func testCardDetailShowsBalance() {
+
+        app.tables.cells.firstMatch.tap()
+
+        XCTAssert(app.staticTexts["$500"].waitForExistence(timeout: 0.5))
+    }
     
 }
